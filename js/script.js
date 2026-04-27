@@ -9,19 +9,18 @@ if (form) {
     form.addEventListener("submit", function(e) {
         e.preventDefault();
 
-        const list = document.querySelector("#name").value;
-        const list = document.querySelector("#date").value;
+        const name = document.querySelector("#name").value;
+        const date = document.querySelector("#date").value;
 
         let assignments = JSON.parse(localStorage.getItem("assignments")) || [];
-        assignments.push(assignment);
+        assignments.push({ name, date });
 
         localStorage.setItem("assignments", JSON.stringify(assignments));
 
         form.reset();
         loadAssignments();
-        updateNextAssignment();
 
-    })
+    });
 
 }
 
@@ -37,10 +36,11 @@ function loadAssignments() {
         const li = document.createElement("li");
         li.className = "list-group-item";
 
-        li.innerHTML = 
+        li.innerHTML = `
+
         ${a.name} - ${a.date}
         <button onclick="deleteAssignment(${index})" class="btn btn-danger btn-sm float-end">Delete</button>
-        ;
+        `;
         list.appendChild(li);
     });
 
