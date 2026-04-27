@@ -49,7 +49,7 @@ function loadAssignments() {
 
 // Delete assignment
 function deleteAssignment(index) {
-    let assignments = JSON.parse(localStorage.getItem("assignments"));
+    let assignments = JSON.parse(localStorage.getItem("assignments")) || [];
     assignments.splice(index, 1);
     localStorage.setItem("assignments", JSON.stringify(assignments));
     loadAssignments();

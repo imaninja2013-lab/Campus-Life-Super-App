@@ -53,11 +53,21 @@
 <h2>Add Assignment</h2>
 
 <form id="assignment-form">
-  <input type="text" id="name" placeholder="Assignment Name" class="form-control mb-2" required>
+
+  <label for="name" class="form-label">Assignment Name</label>
+  <input type="text" id="name" class="form-control mb-2" required>
+
+  <label for="date" class="form-label">Due Date</label>
   <input type="date" id="date" class="form-control mb-2">
-  <input type="text" id="class" placeholder="Class Name" class="form-control mb-2">
-  <input type="text" id="contact" placeholder="Instructor Contact" class="form-control mb-2">
+
+  <label for="class" class="form-label">Class Name</label>
+  <input type="text" id="class" class="form-control mb-2">
+
+  <label for="contact" class="form-label">Instructor Contact</label>
+  <input type="text" id="contact" class="form-control mb-2">
+
   <button class="btn btn-success">Add Assignment</button>
+
 </form>
 
 <h2 class="mt-4">Your Assignments</h2>
