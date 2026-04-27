@@ -15,28 +15,48 @@
 <body>
     
     <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Campus Life Support</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container-fluid">
 
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
-                <li class="nav-item"><a class="nav-link" href="campus.html">Campus Map</a></li>
-                <li class="nav-item"><a class="nav-link" href="request.html">Requests</a></li>
-            </ul>
-        </div>
+    <a class="navbar-brand fw-bold" href="index.html">
+      🎓 Campus Life Support
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav ms-auto align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link nav-btn" href="assignments.html">📚 Assignments</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-btn" href="campus.html">🗺️ Map</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-btn" href="request.html">✉️ Request</a>
+        </li>
+
+      </ul>
+
     </div>
+  </div>
 </nav>
 
 <main class="container my-4">
 
 <h2>Parking Map</h2>
-<div id="map" style="height:300px; background:lightgray;">
-  Map placeholder
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.095519537231!2d-82.76513779999999!3d34.727986599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88585c9b84bd5349%3A0x2c352b48c6032761!2sSouthern%20Wesleyan%20University!5e0!3m2!1sen!2sus!4v1777260310620!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+  </iframe>
 </div>
 
 <h2 class="mt-4">Study Spots</h2>

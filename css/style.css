@@ -1,7 +1,8 @@
 /* Body Style*/
 body {
-    font-family: Ariall,sans-serif;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e9f2ff, #f8f9fa);
+    min-height: 100vh;
 }
 
 /* Header Style */
@@ -41,4 +42,37 @@ footer {
     header h1 {
         font-size: 1.8rem;
     }
+}
+
+.card img {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Navbar button look */
+.nav-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #000000 !important;
+    padding: 8px 18px;
+    border-radius: 50px;
+    margin-left: 10px;
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.25s ease;
+}
+
+/* Hover state  */
+.nav-btn:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+/* Active page */
+.nav-btn.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }

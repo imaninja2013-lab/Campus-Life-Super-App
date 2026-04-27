@@ -15,21 +15,37 @@
 <body>
 
     <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Campus Life Support</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container-fluid">
 
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
-                <li class="nav-item"><a class="nav-link" href="campus.html">Campus Map</a></li>
-                <li class="nav-item"><a class="nav-link" href="request.html">Requests</a></li>
-            </ul>
-        </div>
+    <a class="navbar-brand fw-bold" href="index.html">
+      🎓 Campus Life Support
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav ms-auto align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link nav-btn" href="assignments.html">📚 Assignments</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-btn" href="campus.html">🗺️ Map</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-btn" href="request.html">✉️ Request</a>
+        </li>
+
+      </ul>
+
     </div>
+  </div>
 </nav>
 
 <main class="container my-4">
@@ -37,9 +53,9 @@
 
     <form>
         <input type="text" placeholder="Name" class="form-control mb-2">
-        <input type="text" palceholder="Student ID" class="form-controll mb-2">
+        <input type="text" placeholder="Student ID" class="form-control mb-2">
         <input type="email" placeholder="Email" class="form-control mb-2">
-        <textarea placeholder="Message" class="form-contromb-2"></textarea>
+        <textarea placeholder="Message" class="form-controlmb-2"></textarea>
         <button class="btn btn-primary">Submit</button>
     </form>
     </main>
